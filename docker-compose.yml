@@ -1,21 +1,21 @@
-#networks:
-#  finding-movies-to-watch-net:
 services:
+
   frontend:
-    build: ./frontend/
+    image: alexsuspis/finding-movies-to-watch_frontend
     container_name: frontend
     ports: 
       - "4200:4200"
     volumes:
       - /usr/src/app/frontend/node_modules
+
   backend:
-    build: ./backend/
+    image: alexsuspis/finding-movies-to-watch_backend
     container_name: backend
     ports:
       - "8080:8080" 
 
   recommendation-system:
-    build: ./recommendation-system/
+    image: alexsuspis/finding-movies-to-watch_recommendation-system
     container_name: recommendation_system
     ports:
       - "3000:3000"
