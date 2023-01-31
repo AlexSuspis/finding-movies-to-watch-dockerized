@@ -6,7 +6,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: frontend
@@ -43,7 +43,7 @@ metadata:
   labels:
     app: backend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: backend
@@ -80,7 +80,7 @@ metadata:
   labels:
     app: recommendation-system
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: recommendation-system
