@@ -1,5 +1,7 @@
 # finding-movies-to-watch-dockerized
 
-Simply clone into your directory, and run 'docker-compose up'. Everything else is taken care for you :)
+Simply clone repo into your directory, and either:
+  - run 'docker-compose up'
+  - or kubectl apply -f deployment-manifest.yaml
 
-Main app UI at http://localhost:4200/.
+Give it a short while to build the frontend container, and access main app UI at http://localhost:4200/.
